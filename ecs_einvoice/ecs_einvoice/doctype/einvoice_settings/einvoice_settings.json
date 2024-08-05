@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "autoname": "field:company",
+ "creation": "2022-05-19 13:21:44.590493",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "e_invoice_settings_section",
+  "environment",
+  "document_version",
+  "allowed_days",
+  "category_code",
+  "column_break_6",
+  "client_id",
+  "client_secret",
+  "enable",
+  "section_break_16",
+  "generated_access_token",
+  "company_information_section",
+  "company",
+  "company_name",
+  "company_type",
+  "tax_id",
+  "activity_code",
+  "branch_id",
+  "country",
+  "additional_info",
+  "column_break_24",
+  "governate",
+  "region_city",
+  "street",
+  "building_number",
+  "postal_code",
+  "floor",
+  "room",
+  "landmark"
+ ],
+ "fields": [
+  {
+   "fieldname": "e_invoice_settings_section",
+   "fieldtype": "Section Break",
+   "label": "E-Invoice Settings"
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "Environment",
+   "options": "Pre-Production\nProduction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "allowed_days",
+   "fieldtype": "Int",
+   "label": "Allowed Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_secret",
+   "fieldtype": "Data",
+   "label": "Client Secret",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "generated_access_token",
+   "fieldtype": "Small Text",
+   "label": "Generated Access Token",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_information_section",
+   "fieldtype": "Section Break",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "unique": 1
+  },
+  {
+   "fieldname": "company_type",
+   "fieldtype": "Data",
+   "label": "Company Type"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "activity_code",
+   "fieldtype": "Data",
+   "label": "Activity Code"
+  },
+  {
+   "fieldname": "branch_id",
+   "fieldtype": "Data",
+   "label": "Branch ID"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "Small Text",
+   "label": "Additional Info"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "governate",
+   "fieldtype": "Data",
+   "label": "Governate"
+  },
+  {
+   "fieldname": "region_city",
+   "fieldtype": "Data",
+   "label": "Region City"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "building_number",
+   "fieldtype": "Data",
+   "label": "Building Number"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Data",
+   "label": "Room"
+  },
+  {
+   "fieldname": "landmark",
+   "fieldtype": "Data",
+   "label": "Landmark"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "category_code",
+   "fieldtype": "Data",
+   "label": "Category Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_version",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Document Version",
+   "options": "v0.9\nv1.0",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-06-25 01:42:07.830394",
+ "modified_by": "Administrator",
+ "module": "Ecs Einvoice",
+ "name": "EInvoice Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
