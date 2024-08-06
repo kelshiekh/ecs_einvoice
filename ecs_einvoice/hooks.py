@@ -23,7 +23,7 @@ scheduler_events = {
         ]
     },
 	"hourly": [
-		"ecs_einvoice.sales_invoice.sales_invoice.update_uuid_status"
+		"ecs_einvoice.ecs_einvoice.sales_invoice.sales_invoice.update_uuid_status"
 	],
 }
 
